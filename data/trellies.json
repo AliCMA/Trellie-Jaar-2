@@ -1,0 +1,41 @@
+{
+    "title": "Levensstijl",
+    "activities": [
+        {
+            "description": "Gespierd worden voor de wijfen",
+            "label": "Gym",
+            "extraClass": "none",
+            "author": "AC"
+        },
+        {
+            "description": "School gaat altijd voor werk ect, dus goeie resultaten halen voor school.",
+            "label": "School",
+            "extraClass": "morgen",
+            "author": "AC"
+        },
+        {
+            "description": "Ieder week chillen met de gangsters",
+            "label": "Friends",
+            "extraClass": "weekend",
+            "author": "AC"
+        },
+        {
+            "description": "Op dit moment soort van werkloos, dus we proberen niewue werk te fixen.",
+            "label": "Work",
+            "extraClass": "deze_week",
+            "author": "AC"
+        },
+        {
+            "description": "Eet gezond, wees gezond = goed gezond lichaam",
+            "label": "Food",
+            "extraClass": "gisteren",
+            "author": "AC"
+        },
+        {
+            "description": "Op dit moment soort van werkloos, dus we proberen niewue werk te fixen.",
+            "label": "Work",
+            "extraClass": "Baskan",
+            "author": "AC"
+        }
+    ]
+}

@@ -1,0 +1,115 @@
+@use "../abstracts/variables";
+
+.tasks{
+    background:map-get( variables.$tasksVars, "background") ;
+    width: 35rem;
+    padding: 1rem;
+    border-radius: 0.3rem;
+    overflow-y: scroll;
+
+    &--hidden{
+        display: none;
+    }
+
+    &__header{ 
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 0.5rem;
+        
+        &__wrapper{
+            display: flex;
+            gap: 1rem;
+            align-items: flex-end;
+        }
+   
+    }
+
+    &__h2{
+        font-size: 100%;
+        font-weight: 700;
+    }
+
+    &__number{
+        background: #43c124;
+        font-size: 90%;
+        padding: 0.5rem;
+        color: white;
+        font-weight: 500;
+        border-radius: 0.3rem;
+    }
+
+    &__edit{
+        background: none;
+        border: none;
+        font-size: 150%;
+        line-height: 1;
+        cursor: pointer;
+        
+    }
+
+    &__list{
+        list-style: none;
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+        
+
+        &Item{
+            background: white;
+            font-size: 90%;
+            padding: 0.5rem;
+            border-radius: 0.3rem;
+            gap: 2rem;
+            box-shadow: 0 0.3rem 0 darken(white, 15%);
+
+            &__Block{
+                display: block;
+                height: 3rem;
+                &__author{
+                    background: red;
+                    color: white;
+                    width:3rem;
+                    text-align: center;
+                    padding: 0.5rem;
+                    display: inline;
+                    border-radius: 50%;
+                    text-align: right;
+                    position: absolute;
+                    bottom: 0.5rem;
+                    right: 0.5rem;
+                }
+                position: relative;
+            }
+        }
+    }
+
+    &__label{
+        display: block;
+        background: map-get(variables.$labelvars, "orange" );
+        width: max-content;
+        padding: 0.2rem 0.5rem;
+        border-radius: 0.3rem;
+        color: #eee;
+
+        &--morgen{
+            background: map-get(variables.$labelvars, "green" );
+        }
+
+        &--weekend{
+            background: map-get(variables.$labelvars, "purple" );
+        }
+
+        &--deze_week{
+            background: map-get(variables.$labelvars, "red" );
+        }
+        
+        &--gisteren{
+            background: map-get(variables.$labelvars, "grey" );
+        }
+
+        &--Baskan{
+            background: map-get(variables.$labelvars, "blue" );
+        }
+    }
+}
